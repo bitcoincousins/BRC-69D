@@ -13,11 +13,17 @@ Bitcoin Cousins was created to showcase BRC69D. In this collection, owners can c
 ## Process
 
 1. Inscribing the images of the traits on-chain
-2. Inscribing the BRC69D collection deployment JSON
-3. Inscribing the BRC69D assets
-4. Inscribing the BRC69D child
+2. Inscribing the BRC69D parent collection deployment file
+3. Inscribing the BRC69D child collection deployment JSON
+4. Inscribing the BRC69D assets
+5. Inscribing the BRC69D child
 
-### Deployment JSON
+
+### Parent Deployment File
+
+The parent deployment inscription is used to retrieve its most recent child, which contains the deployment JSON. That final child then serves as the deployment JSON, allowing you to update the traits after the launch.
+
+### Child Deployment JSON
 
 The deployment JSON contains collection and compiler information along with attributes. The attributes are organized into three layers: the trait type, the trait, and the dynamic trait.
 
