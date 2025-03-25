@@ -13,15 +13,15 @@ Bitcoin Cousins was created to showcase BRC69D. In this collection, owners can c
 ## Process
 
 1. Inscribing the images of the traits on-chain
-2. Inscribing the BRC69D parent collection deployment file
-3. Inscribing the BRC69D child collection deployment JSON
+2. Inscribing the BRC69D parent deployer file
+3. Inscribing the BRC69D collection deployment JSON
 4. Inscribing the BRC69D assets
 5. Inscribing the BRC69D child
 
 
-### Parent Deployment File
+### Parent Deployer File
 
-The parent deployment inscription is used to retrieve its most recent child, which contains the deployment JSON. That final child then serves as the deployment JSON, allowing you to update the traits after the launch.
+The parent deployer inscription is used to retrieve its most recent child, which contains the deployment JSON. That final child then serves as the deployment JSON, allowing you to update the traits after the launch.
 
 ### Child Deployment JSON
 
@@ -145,7 +145,7 @@ For example, from the string "2,0-1,1-6,1-4,7-2,0-6,0-2,0-1,3", a group value of
       tag.setAttribute('i', `/r/children/${inscriptionId}`);
       tag.setAttribute('t', "2,0-1,1-6,1-4,7-2,0-6,0-2,0-1,3");
       tag.setAttribute('src', '/content/<complier_inscription_id>');
-      tag.setAttribute('d', `/content/<deployer_inscription_id>`);
+      tag.setAttribute('d', `/r/children/<parent_deployer_inscription_id>`);
       document.body.appendChild(tag);
     })();
   </script>
