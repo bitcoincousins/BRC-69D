@@ -158,7 +158,8 @@ For example, from the string "2,0-1,1-6,1-4,7-2,0-6,0-2,0-1,3", a group value of
 | src  | YES      | Source: Points to the standard compiler inscription           |
 | d    | YES      | Deploy: Points to your collection's deploy inscription        |
 
-Current Standard Compiler Inscription ID: `<complier_inscription_id>`
+Current Standard Compiler Inscription ID: 28d5ad72fd7d2843eae423397183b96dfaed8bc440ef580a3cbe5ef0d5f11fc3i0
+
 Last Updated: March 18, 2025
 
 
